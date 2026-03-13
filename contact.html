@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - SpicesHub | Kerala Spice Exporter</title>
+  <meta name="description" content="Contact SpicesHub for premium Kerala spices. WhatsApp: +91 7907167648. Email: mjspiceshub@gmail.com. Sourcing from Idukki, Kerala.">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .contact-layout {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 5rem; max-width: 1100px; margin: 0 auto;
+    }
+    @media (max-width: 860px) { .contact-layout { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+<div class="page-content">
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="page-hero-bg" style="background-image: url('images/spice5.jpg');"></div>
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <span class="page-hero-tag">We'd Love to Hear from You</span>
+      <h1>Get In <em>Touch</em></h1>
+    </div>
+  </div>
+
+  <!-- CONTACT SECTION -->
+  <section class="section section--cream">
+    <div class="contact-layout">
+
+      <!-- Contact Form -->
+      <div class="reveal">
+        <div class="form-card">
+          <h2>Send Us a Message</h2>
+          <div class="form-group">
+            <label for="fname">Full Name *</label>
+            <input type="text" id="fname" placeholder="Your full name" required>
+          </div>
+          <div class="form-group">
+            <label for="fphone">Phone / WhatsApp</label>
+            <input type="tel" id="fphone" placeholder="+91 or international">
+          </div>
+          <div class="form-group">
+            <label for="femail">Email Address *</label>
+            <input type="email" id="femail" placeholder="your@email.com" required>
+          </div>
+          <div class="form-group">
+            <label for="fmessage">Message *</label>
+            <textarea id="fmessage" rows="5" placeholder="Tell us about your requirements..." required></textarea>
+          </div>
+          <button class="btn btn-primary" onclick="submitContact()" style="width:100%;border:none;padding:16px;justify-content:center;">
+            Send Message
+          </button>
+        </div>
+      </div>
+
+      <!-- Business Details -->
+      <div class="reveal">
+        <span class="section-tag" style="text-align:left;display:block;margin-bottom:0.5rem;">Business Details</span>
+        <h2 style="font-size:2rem;color:var(--green-deep);margin-bottom:1rem;font-weight:500;">SpicesHub</h2>
+        <p style="color:var(--brown-light);font-size:0.9rem;line-height:1.8;font-weight:300;margin-bottom:2rem;">
+          A Unit of MJ Spices - headquartered in Kerala with direct sourcing operations across the spice-growing heartlands of Idukki, Wayanad, and beyond.
+        </p>
+
+        <div class="contact-detail">
+          <div class="contact-icon">&#128205;</div>
+          <div class="contact-detail-text">
+            <strong>Address</strong>
+            <span>17-555, SpicesHub (MJ Spices)<br>
+            Murukkady, Vishwanathapuram PO<br>
+            Kumily, Idukki District<br>
+            Kerala, India</span>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-icon">&#128222;</div>
+          <div class="contact-detail-text">
+            <strong>Phone</strong>
+            <a href="tel:+917907167648">+91 7907167648</a><br>
+            <a href="tel:+919495121533">+91 9495121533</a>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-icon">&#128172;</div>
+          <div class="contact-detail-text">
+            <strong>WhatsApp</strong>
+            <a href="https://wa.me/917907167648" target="_blank" rel="noopener">
+              +91 7907167648 - Chat Now
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-icon">&#9993;</div>
+          <div class="contact-detail-text">
+            <strong>Email</strong>
+            <a href="mailto:mjspiceshub@gmail.com">mjspiceshub@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-icon">&#127760;</div>
+          <div class="contact-detail-text">
+            <strong>Website</strong>
+            <a href="https://www.myspiceshub.com" target="_blank" rel="noopener">www.myspiceshub.com</a>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-icon">&#128247;</div>
+          <div class="contact-detail-text">
+            <strong>Instagram</strong>
+            <a href="https://instagram.com/myspiceshub" target="_blank" rel="noopener">@myspiceshub</a>
+          </div>
+        </div>
+
+        <!-- Google Map - Kumily, Idukki, Kerala -->
+        <div class="map-wrap">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62635!2d77.1!3d9.9!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b063b3b5e28b4c7%3A0x0!2sKumily%2C%20Kerala%2C%20India!5e0!3m2!1sen!2sin!4v1"
+            allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="SpicesHub location Kumily Idukki Kerala India">
+          </iframe>
+        </div>
+
+        <div style="margin-top:2rem;">
+          <a href="https://wa.me/917907167648?text=Hello%20SpicesHub%2C%20I%20would%20like%20to%20enquire%20about%20your%20spices."
+             class="btn btn-whatsapp" target="_blank" rel="noopener"
+             style="display:flex;justify-content:center;">
+            &#128172; Chat on WhatsApp Now
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</div>
+
+<script src="nav-footer.js"></script>
+<script>
+function submitContact() {
+  var name  = document.getElementById('fname').value.trim();
+  var email = document.getElementById('femail').value.trim();
+  var phone = document.getElementById('fphone').value.trim();
+  var msg   = document.getElementById('fmessage').value.trim();
+
+  if (!name || !email || !msg) {
+    alert('Please fill in all required fields marked with *.');
+    return;
+  }
+
+  var waText = 'Hello SpicesHub,\nName: ' + name + '\nEmail: ' + email;
+  if (phone) { waText += '\nPhone: ' + phone; }
+  waText += '\n\n' + msg;
+
+  window.open('https://wa.me/917907167648?text=' + encodeURIComponent(waText), '_blank');
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Place Order – SpicesHub | Premium Kerala Spices</title>
+  <meta name="description" content="Place your order for premium cardamom, black pepper, and coffee beans from SpicesHub. Export-quality Kerala spices delivered worldwide.">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .order-layout {
+      display: grid; grid-template-columns: 1.4fr 1fr;
+      gap: 4rem; max-width: 1100px; margin: 0 auto;
+      align-items: start;
+    }
+    @media (max-width: 860px) { .order-layout { grid-template-columns: 1fr; } }
+    .order-sidebar h3 {
+      font-size: 1.5rem; color: var(--green-deep);
+      margin-bottom: 1.2rem; font-weight: 500;
+    }
+    .order-sidebar p {
+      color: var(--brown-light); font-size: 0.9rem;
+      line-height: 1.8; font-weight: 300; margin-bottom: 1rem;
+    }
+    .product-thumb {
+      display: flex; gap: 1rem; align-items: center;
+      padding: 1rem; background: var(--cream);
+      margin-bottom: 0.8rem; cursor: pointer;
+      border: 2px solid transparent; transition: border-color 0.3s;
+      text-decoration: none;
+    }
+    .product-thumb:hover { border-color: var(--gold); }
+    .product-thumb img { width: 70px; height: 70px; object-fit: cover; }
+    .product-thumb-info h4 { font-size: 1rem; color: var(--green-deep); font-weight: 500; }
+    .product-thumb-info span { font-size: 0.78rem; color: var(--gold); letter-spacing: 1px; font-weight: 500; }
+    .wa-order-box {
+      background: var(--green-deep); padding: 2rem;
+      margin-top: 2rem; text-align: center;
+    }
+    .wa-order-box p {
+      color: rgba(245,237,216,0.75); font-size: 0.88rem;
+      line-height: 1.7; margin-bottom: 1.2rem;
+    }
+    .wa-order-box h3 { color: var(--cream); margin-bottom: 0.8rem; }
+  </style>
+</head>
+<body>
+<div class="page-content">
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="page-hero-bg" style="background-image: url('images/spice4.jpg');"></div>
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <span class="page-hero-tag">SpicesHub · Kerala, India</span>
+      <h1>Place Your <em>Order</em></h1>
+    </div>
+  </div>
+
+  <!-- ORDER FORM -->
+  <section class="section section--cream">
+    <div class="order-layout">
+
+      <!-- Form -->
+      <div class="reveal">
+        <div class="form-card">
+          <h2>Order Form</h2>
+          <div class="form-group">
+            <label for="cname">Full Name *</label>
+            <input type="text" id="cname" placeholder="Your full name" required>
+          </div>
+          <div class="form-group">
+            <label for="cphone">Phone / WhatsApp *</label>
+            <input type="tel" id="cphone" placeholder="+91 or international">
+          </div>
+          <div class="form-group">
+            <label for="cemail">Email Address *</label>
+            <input type="email" id="cemail" placeholder="your@email.com" required>
+          </div>
+          <div class="form-group">
+            <label for="caddress">Delivery Address</label>
+            <input type="text" id="caddress" placeholder="City, Country">
+          </div>
+          <div class="form-group">
+            <label for="cproduct">Select Product *</label>
+            <select id="cproduct" required>
+              <option value="">— Choose a product —</option>
+              <option value="cardamom">Green Cardamom</option>
+              <option value="pepper">Black Pepper</option>
+              <option value="coffee">Coffee Beans</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="cqty">Quantity (kg) *</label>
+            <input type="number" id="cqty" placeholder="e.g. 10" min="1" required>
+          </div>
+          <div class="form-group">
+            <label for="cpayment">Preferred Payment Method</label>
+            <select id="cpayment">
+              <option value="">— Select payment —</option>
+              <option value="upi">UPI / IMPS (India)</option>
+              <option value="bank">Bank Transfer (SWIFT)</option>
+              <option value="cod">Cash on Delivery</option>
+              <option value="discuss">To Be Discussed</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="cnotes">Special Instructions</label>
+            <textarea id="cnotes" rows="3" placeholder="Packaging preference, delivery notes…"></textarea>
+          </div>
+          <button class="btn btn-primary" onclick="submitOrder()" style="width:100%;border:none;padding:16px;font-size:0.85rem;justify-content:center;">
+            Place Order
+          </button>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="reveal">
+        <h3>Our Products</h3>
+        <p>Browse our premium spice range. Click any product for full details before ordering.</p>
+
+        <a href="cardamom.html" class="product-thumb">
+          <img src="images/spice3.jpg" alt="Green Cardamom">
+          <div class="product-thumb-info">
+            <h4>Green Cardamom</h4>
+            <span>Queen of Spices · Idukki, Kerala</span>
+          </div>
+        </a>
+        <a href="pepper.html" class="product-thumb">
+          <img src="images/spice6.jpg" alt="Black Pepper">
+          <div class="product-thumb-info">
+            <h4>Black Pepper</h4>
+            <span>King of Spices · Wayanad, Kerala</span>
+          </div>
+        </a>
+        <a href="coffee.html" class="product-thumb">
+          <img src="images/spice2.jpg" alt="Coffee Beans">
+          <div class="product-thumb-info">
+            <h4>Coffee Beans</h4>
+            <span>Arabica & Robusta · Kerala Estate</span>
+          </div>
+        </a>
+
+        <div class="wa-order-box">
+          <h3>Prefer WhatsApp?</h3>
+          <p>Chat with us directly to discuss your requirements, pricing, and delivery options.</p>
+          <a href="https://wa.me/917907167648?text=Hello%20SpicesHub%2C%20I%20would%20like%20to%20place%20an%20order.%20Please%20share%20details."
+             class="btn btn-whatsapp" target="_blank" rel="noopener"
+             style="display:flex;justify-content:center;">
+            💬 Order on WhatsApp
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</div>
+<script src="nav-footer.js"></script>
+<script>
+function submitOrder() {
+  const name    = document.getElementById('cname').value.trim();
+  const email   = document.getElementById('cemail').value.trim();
+  const product = document.getElementById('cproduct').value;
+  const qty     = document.getElementById('cqty').value;
+  if (!name || !email || !product || !qty) {
+    alert('Please fill in all required fields (*).');
+    return;
+  }
+  const productNames = { cardamom:'Green Cardamom', pepper:'Black Pepper', coffee:'Coffee Beans' };
+  const msg = encodeURIComponent(
+    `Hello SpicesHub, I would like to order ${productNames[product]} — ${qty}kg.\nName: ${name}\nEmail: ${email}\nPlease share pricing and shipping details.`
+  );
+  window.open(`https://wa.me/917907167648?text=${msg}`, '_blank');
+}
+</script>
+</body>
+</html>
